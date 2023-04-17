@@ -125,7 +125,7 @@ Made with love - Steven Rey Britez.-
 
 <img class="img-fluid" src="/static/images/screenshots/documentacion.png" style="height: 500px; width: auto;">
 
-<img class="img-fluid" src="/static/images/screenshots/documentacion_2png" style="height: 500px; width: auto;">
+<img class="img-fluid" src="/static/images/screenshots/documentacion_2.png" style="height: 500px; width: auto;">
 
 #### APPS DEMO - The Biggest Spender
 
