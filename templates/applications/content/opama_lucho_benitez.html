@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block meta %}
+  <!-- On Page META SEO -->
+  <title>{% block page_title %} Análisis de datos de transporte del área metropolitana de Asunción {% endblock %}</title>
+  <meta name="description" content="{% block description %}Articulo sobre datos de transporte{% endblock %}">
+  <meta name="keywords" content="{% block keywords %}Opama, Transporte Público, Asunción{% endblock %}">
+{% endblock meta %}
+
+{% block body %}
+  {{ content|safe }}
+{% endblock %}

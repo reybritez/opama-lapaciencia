@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block meta %}
+  <!-- On Page META SEO -->
+  <title>{% block page_title %} Ejemplo de Deploy de Datos - Biggest Spender {% endblock %}</title>
+  <meta name="description" content="{% block description %} Description {% endblock %}">
+  <meta name="keywords" content="{% block keywords %} KeyWords {% endblock %}">
+{% endblock meta %}
+
+{% block body %}
+  <br>
+  <h1 class="center"> Una sóla tarjeta: todos sus gastos </h1>
+  <h2>Esta tabla HTML es un componente de React.js,los datos son extraídos del RestFul API. Basado en el repositorio de <a href="https://github.com/torresmateo/opama">Mateo Torres</a></h2>
+
+  <hr>
+
+  <div id="tabla"></div>
+
+{% endblock %}
+
+{% block page_js %}
+    <script type="text/javascript" src="{% static 'JavaScript/bundles/Biggest-bundle.js' %}"></script>
+{% endblock page_js %}

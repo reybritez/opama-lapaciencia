@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block meta %}
+  <!-- On Page META SEO -->
+  <title>{% block page_title %} OPAMA {% endblock %}</title>
+  <meta name="description" content="{% block description %} Organización de Pasajeros del área metropolitana de Asunción {% endblock %}">
+  <meta name="keywords" content="{% block keywords %} OPAMA, pasajeros, asunción, fantasma, billetaje eletrónico {% endblock %}">
+{% endblock meta %}
+
+{% block body %}
+  {% include "website/components/hero.html" %}
+{% endblock %}
+

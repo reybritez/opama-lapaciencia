@@ -1,0 +1,63 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg bg-light sticky-top">
+  <b class="container">
+
+    <a class="navbar-brand" href="{% url 'website:landing_page' %}"><img class="img-fluid" src="{% static 'images/branding/logo.png' %}" style="height: 50px; width: auto;"></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Contenido
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'content:docs' %}">Documentación</a></li>
+            <li><a class="dropdown-item" href="{% url 'content:opama_mateo_torres' %}">Mateo Torres</a></li>
+            <li><a class="dropdown-item" href="{% url 'content:opama_lucho_benitez' %}">Lucho Benitez</a></li>
+            <li><a class="dropdown-item" href="{% url 'content:opama_karl_niebuhr' %}">Karl Niebuhr</a></li>
+          </ul>
+        </li>
+
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Apps
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{% url 'website:biggest_spender' %}">App Testing: Mayor Gastador</a></li>
+            <li><a class="dropdown-item" href="{% url 'website:tu_bus_de_la_suerte' %}">App Testing: Tu Bus De La Suerte</a></li>
+          </ul>
+        </li>
+
+        </li><li class="nav-item dropdown">
+          <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            API
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" target="_blank" href="{% url 'api:biggest_spender' %}">API: Tarjeta con Mayor Gasto</a></li>
+            <li><a class="dropdown-item" target="_blank" href="{% url 'api:tu_bus_de_la_suerte' %}">API: Catalogo de Rutas 2023</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <ul class="navbar-nav me-end mb-2 mb-lg-0">
+        <li>
+          <!-- <form id="downloadForm" method="get" action="{% static 'database/data.xlsx' %}">
+            {% csrf_token %}
+            <a class="btn btn-outline-danger " onclick="javascript:document.getElementById('downloadForm').submit()"><b>Descargar archivos <i class="fa-solid fa-database"></i></b></a>
+          </form> -->
+          <a class="btn btn-outline-danger" href="https://drive.google.com/drive/folders/12EbE0PEEnCjUVjhzMDNa1W7M9tR4ZzwW" target="_blank"><b>Descargar archivos <i class="fa-solid fa-database"></i></b></a>
+        </li>
+        <li><a class="nav-link"></a></li>
+        <li><a class="btn btn-success"><b>WhatsApp</i></b></a></li>
+      </ul>
+
+    </div>
+  </b>
+</nav>
+

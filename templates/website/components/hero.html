@@ -1,0 +1,73 @@
+{% load static %}
+
+<h1 class="center">Bienvenido a la web de búsqueda de información del transporte público en Paraguay.</h1>
+</br>
+
+<div class="row">
+    <div class="col text-center">
+        <div><img class="img-fluid" src="{% static 'images/branding/logo.png' %}" alt="logo" width="200px"></div>
+        <h3>"Este es un caso puntual pero la falta de transparencia es un problema más estructural dentro del Viceministerio de Transporte. La práctica de no ser transparente no es solamente una cuestión de falta de personal"
+        </h3><h2><a target="_blank" href="https://twitter.com/mmaluff/"> Mauricio Maluff Masi</a></h2>
+        </br></br>
+    </div>
+    <div class="col-md card bg-success bg-opacity-75">
+        <div class="p-3">
+            <h1 class="text-center text-white"><b>Opama La Paciencia</b></h1>
+            </br>
+            <h4 class="hero-section" style="color:#ffd06b"><b>Más de 30 ingenieros, informáticos y científicos de datos voluntarios se sumaron a analizar los datos que nos dió el viceministerio de transporte del sistema de billetaje electrónico.</b></h4>
+            </br>
+            <b class="hero-section text-light">Vos podes ayudar a mejorar el transporte público.
+            Te pedimos que levantes una foto o un video del pasillo en el momento que viajas en cualquier línea y etiquetes #OPAMA..</b>
+            </br></br>
+            <div class="form-floating mb-3">
+                <a target="_blank" href="https://twitter.com/intent/tweet" class="btn btn-lg btn-info w-100 text-white"><h3 style="font-size: 3rem;"><b>Tuitea Ahora</b></h3></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section>
+
+    </br>
+    <div class="text-center">
+        <a class="btn btn-lg bg-info bg-opacity-20 text-black" target="_blank" href="https://github.com/reybritez/opama-lapaciencia"><b><i class="fa-brands fa-github fa-lg"></i> Descargar Código Fuente <i class="fa-brands fa-github fa-lg"></i></b></a>
+    </div>
+
+    </br>
+
+    <div class="text-center">
+        <a class="btn bg-success text-white p-4" target="_blank" href="{% url 'content:docs' %}"><b>DOCUMENTACIÓN</b></a>
+    </div>
+    </br>
+
+    <p>
+        <h2>Este proyecto incluye:</h4>
+        </br>
+        <b>Frontend JavaScript build pipeline</b>, utiliza Webpack para empaquetar el archivo JavaScript <b>./asset/JavaScript/site.js</b>  Webpack está configurado para traducir; .js | .jsx y empaquetarlos en un formato legible por el navegador en <b>./static/JavaScript/site-bundle.js</b>
+        </br></br>
+        <b>RestFul API</b>, que utiliza DRF, esto le ayuda a obtener su API en funcionamiento rápido.  Un ejemplo de creación de una API a partir de un archivo excel  <b>./applications/api/views.py</b>
+        </br></br>
+        <b>MarkDown/HTML .md Content Management System</b>, Esta aplicación sirve archivos .md a tus plantillas Django, a través de <b>./applications/content/views.py</b> esto se utiliza para crear artículos y contenido para el proyecto más fácilmente.
+        Este es un método muy simplista para CMS pero por eso es bueno, porque tienes control total sobre el contenido y la entrega. Hay muchos aspectos negativos, como tener que volver a comprometer su aplicación en la producción, pero le sugerimos que se concentre en la calidad de su contenido SEO en lugar de la cantidad.
+        </br></br>
+        <b>Django: SEO & Sitemap</b> que utiliza Django para crear una página /sitemap.xml, que se puede registrar con los motores de búsqueda como GOOG, para añadir urls a su http://127.0.0.1:8000/sitemap.xml.
+        Visita <b>./applications/website/SiteMap.py</b> Los meta tags pueden ser anulados en las plantillas, por ejemplo  <b>./templates/applications/content/content_django.html</b> Tl Los meta tags html por defecto deben ser escritos en los 'bloques django' en la página ./templates/base.html esto sirve como la página html base para el proyecto.
+        </br></br>
+        <b>Website Django Application</b> sta aplicación es para cualquier página web genérica; términos, privacidad, acerca de, etc. Las plantillas de sitios web son básicamente para páginas estáticas / páginas renderizadas backend.
+        </br></br>
+        La idea con esto es que nos permite construir una aplicación rápidamente ya que parte de la infraestructura vital, ya se encuentra establecida de una manera bien estructurada siguiendo las buenas prácticas django y web. Usted puede integrar fácilmente react en cualquiera de sus plantillas django, teniendo la opción de utilizar JavaScript moderno o no. 
+    </p>
+</section>
+
+</br>
+<section>
+    <div class="card text-black text-center p-3" style="background-image: url('/static/images/graphics/homer.jpeg'); background-size: cover; font-size: 4rem;">
+        Sumate a los inginieros:
+    </div>
+    <div class="text-center">
+        </br>
+        <a class="btn btn-lg btn-success text-white" href="https://t.me/+mbo-lMokhOc1ZWIx"><b>Ingresá al Telegram</b></a>
+        {% block page_js %}
+        {% endblock page_js %}
+    </div>
+</section>

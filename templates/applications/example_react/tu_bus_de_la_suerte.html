@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block meta %}
+  <!-- On Page META SEO -->
+  <title>{% block page_title %} Tu Bus De La Suerte {% endblock %}</title>
+  <meta name="description" content="{% block description %} Descripción {% endblock %}">
+  <meta name="keywords" content="{% block keywords %} Keywords {% endblock %}">
+{% endblock meta %}
+
+{% block body %}
+  <div id="tubus" >
+{% endblock %}
+
+{% block page_js %}
+  <script type="text/javascript" src="{% static 'JavaScript/bundles/TuBusDeLaSuerte-bundle.js' %}"></script>
+{% endblock page_js %}
