@@ -125,20 +125,20 @@ Made with love - Steven Rey Britez.-
 
 <img class="img-fluid" src="/static/images/screenshots/documentacion.png" style="height: 500px; width: auto;">
 
-<img class="img-fluid" src="/static/images/screenshots/documentacion2.png" style="height: 500px; width: auto;">
+<img class="img-fluid" src="/static/images/screenshots/documentacion_2png" style="height: 500px; width: auto;">
 
 #### APPS DEMO - The Biggest Spender
 
-<img class="img-fluid" src="/static/images/screenshots/apps_biggest_spender.png" style="height: 500px; width: auto;"
+<img class="img-fluid" src="/static/images/screenshots/apps_biggest_spender.png" style="height: 500px; width: auto;">
 
 #### APPS DEMO - Tu Bus De La Suerte
 
 <img class="img-fluid" src="/static/images/screenshots/apps_generador_tu_bus_de_la_suerte.png" style="height: 500px; width: auto;">
 
-<img class="img-fluid" src="/static/images/screenshots/apps_table_tu_bus_de_la_suerte.png" style="height: 500px; width: auto;"
+<img class="img-fluid" src="/static/images/screenshots/apps_table_tu_bus_de_la_suerte.png" style="height: 500px; width: auto;">
 
 #### REST APIS
 
 <img class="img-fluid" src="/static/images/screenshots/django_rest_api_biggest_spender.png" style="height: 500px; width: auto;">
 
-<img class="img-fluid" src="/static/images/screenshots/django_rest_api_tubusdelasuerte.png" style="height: 500px; width: auto;"
+<img class="img-fluid" src="/static/images/screenshots/django_rest_api_tubusdelasuerte.png" style="height: 500px; width: auto;">
