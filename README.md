@@ -16,7 +16,7 @@ PD: No soy diseñador, por eso integré React por si alguien de buen <3 quiera c
 
 ### Stack de Tecnologías
 #### Base de datos
-* SQlite | db.sqlite3 (PostgreSQL)  https://sqlite.org
+* PostgreSQL | https://www.postgresql.org
 #### Backend
 * Python | Django   https://www.djangoproject.com/re
 * Python | Django Rest Framework    https://www.django-rest-framework.org/
@@ -46,6 +46,27 @@ PD: No soy diseñador, por eso integré React por si alguien de buen <3 quiera c
 **Cuando instales paquetes Python adicionales, para actualizar el archivo requirements.txt, ejecuta** pip freeze > requirements.txt
 
 **Crear un archivo .env en el directorio principal con la instancia SECRET_KEY='secreto'**
+
+**POSTGRES**
+
+* Crear username:  sudo -u postgres createuser <username>
+* Crear database: sudo -u postgres createdb <dbname>
+* Crear password: 
+sudo -u postgres psql
+psql=# alter user <username> with encrypted password '<password>';
+* Dar acceso a la db: 
+psql=# grant all on database <dbname> to <username> ;
+psql=# alter database <dbname> to <username>;
+
+Agregar al .env con las credenciales anteriores
+DATABASE_URL='localhost'
+DJANGO_DATABASE_NAME=''
+DJANGO_DATABASE_USER=''
+DJANGO_DATABASE_PASSWORD=''
+DJANGO_DATABASE_HOST='localhost'
+DJANGO_DATABASE_PORT='5432'
+
+
 
 **ejecutar: py manage.py makemigrations**
 
