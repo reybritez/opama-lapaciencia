@@ -15,6 +15,7 @@ import os
 from dotenv import load_dotenv
 
 load_dotenv()
+env =  os.environ.get
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -94,26 +95,23 @@ WSGI_APPLICATION = 'configuration.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 # SQLite
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-# # PostgreSQL
-# if "DATABASE_URL" in env:
-#     DATABASES = {"default": env.db()}
-# else:
-#     DATABASES = {
-#         "default": {
-#             "ENGINE": "django.db.backends.postgresql_psycopg2",
-#             "NAME": env("DJANGO_DATABASE_NAME", default="xyz"),
-#             "USER": env("DJANGO_DATABASE_USER", default="postgres"),
-#             "PASSWORD": env("DJANGO_DATABASE_PASSWORD", default="***"),
-#             "HOST": env("DJANGO_DATABASE_HOST", default="localhost"),
-#             "PORT": env("DJANGO_DATABASE_PORT", default="5432"),
-#         }
+#DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
+# }
+# PostgreSQL
+DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": env("DJANGO_DATABASE_NAME", default="xyz"),
+            "USER": env("DJANGO_DATABASE_USER", default="postgres"),
+            "PASSWORD": env("DJANGO_DATABASE_PASSWORD", default="***"),
+            "HOST": env("DJANGO_DATABASE_HOST", default="localhost"),
+            "PORT": env("DJANGO_DATABASE_PORT", default="5432"),
+        }
+    }
 
 
 # Password validation
