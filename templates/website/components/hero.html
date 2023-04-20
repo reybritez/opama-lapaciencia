@@ -1,6 +1,7 @@
 {% load static %}
 
-<h1 class="center">Bienvenido a la web de búsqueda de información del transporte público en Paraguay.</h1>
+<h1 class="center text-opama" style="
+margin-bottom: -10px;">Portal de análisis de datos del transporte público en Paraguay</h1>
 </br>
 
 <div class="row">
@@ -10,17 +11,17 @@
         </h3><h2><a target="_blank" href="https://twitter.com/mmaluff/"> Mauricio Maluff Masi</a></h2>
         </br></br>
     </div>
-    <div class="col-md card bg-success bg-opacity-75">
+    <div class="col-md card" style="background-color:#E3E0FE">
         <div class="p-3">
-            <h1 class="text-center text-white"><b>Opama La Paciencia</b></h1>
+            <h1 class="text-center text-opama2">OPAMA NUESTRA PACIENCIA</h1>
             </br>
-            <h4 class="hero-section" style="color:#ffd06b"><b>Más de 30 ingenieros, informáticos y científicos de datos voluntarios se sumaron a analizar los datos que nos dió el viceministerio de transporte del sistema de billetaje electrónico.</b></h4>
+            <h4 class="hero-section text-opama"><b>Más de 30 ingenieros, informáticos y científicos de datos voluntarios se sumaron a analizar los datos que nos dió el viceministerio de transporte del sistema de billetaje electrónico.</b></h4>
             </br>
-            <b class="hero-section text-light">Vos podes ayudar a mejorar el transporte público.
-            Te pedimos que levantes una foto o un video del pasillo en el momento que viajas en cualquier línea y etiquetes #OPAMA..</b>
+            <h5 class="hero-section text-opama">Vos podes ayudarnos a mejorar el transporte público.
+            Te pedimos que levantes una foto o un video del pasillo en el momento que viajas en cualquier línea y etiquetes #OPAMA..</h5>
             </br></br>
             <div class="form-floating mb-3">
-                <a target="_blank" href="https://twitter.com/intent/tweet" class="btn btn-lg btn-info w-100 text-white"><h3 style="font-size: 3rem;"><b>Tuitea Ahora</b></h3></a>
+                <a target="_blank" href="https://twitter.com/intent/tweet" class="btn btn-lg w-100" style="background-color: #89A1FB;"><h3 style="font-size: 2rem;" class="text-opama"><b>Tuitea ahora!</b></h3></a>
             </div>
         </div>
     </div>
@@ -30,13 +31,13 @@
 
     </br>
     <div class="text-center">
-        <a class="btn btn-lg bg-info bg-opacity-20 text-black" target="_blank" href="https://github.com/reybritez/opama-lapaciencia"><b><i class="fa-brands fa-github fa-lg"></i> Descargar Código Fuente <i class="fa-brands fa-github fa-lg"></i></b></a>
+        <a class="btn btn-lg bg-light bg-opacity-20" target="_blank" href="https://github.com/reybritez/opama-lapaciencia"><b><i class="fa-brands fa-github fa-lg"></i> Descargar Código Fuente <i class="fa-brands fa-github fa-lg"></i></b></a>
     </div>
 
     </br>
 
     <div class="text-center">
-        <a class="btn bg-success text-white p-4" target="_blank" href="{% url 'content:docs' %}"><b>DOCUMENTACIÓN</b></a>
+        <a class="btn btn-lg bg-light bg-opacity-90  text-opama2 p-4" target="_blank" href="{% url 'content:docs' %}"><b>IR A DOCUMENTACIÓN</b></a>
     </div>
     </br>
 
@@ -51,7 +52,8 @@
         Este es un método muy simplista para CMS pero por eso es bueno, porque tienes control total sobre el contenido y la entrega. Hay muchos aspectos negativos, como tener que volver a comprometer su aplicación en la producción, pero le sugerimos que se concentre en la calidad de su contenido SEO en lugar de la cantidad.
         </br></br>
         <b>Django: SEO & Sitemap</b> que utiliza Django para crear una página /sitemap.xml, que se puede registrar con los motores de búsqueda como GOOG, para añadir urls a su http://127.0.0.1:8000/sitemap.xml.
-        Visita <b>./applications/website/SiteMap.py</b> Los meta tags pueden ser anulados en las plantillas, por ejemplo  <b>./templates/applications/content/content_django.html</b> Tl Los meta tags html por defecto deben ser escritos en los 'bloques django' en la página ./templates/base.html esto sirve como la página html base para el proyecto.
+        Visita <b>./applications/website/SiteMap.py</b> Los meta tags pueden ser anulados en las plantillas, por ejemplo  
+        <b>./templates/applications/content/</b> Tl Los meta tags html por defecto deben ser escritos en los 'bloques django' en la página ./templates/base.html esto sirve como la página html base para el proyecto.
         </br></br>
         <b>Website Django Application</b> sta aplicación es para cualquier página web genérica; términos, privacidad, acerca de, etc. Las plantillas de sitios web son básicamente para páginas estáticas / páginas renderizadas backend.
         </br></br>
@@ -61,12 +63,9 @@
 
 </br>
 <section>
-    <div class="card text-black text-center p-3" style="background-image: url('/static/images/graphics/homer.jpeg'); background-size: cover; font-size: 4rem;">
-        Sumate a los inginieros:
-    </div>
     <div class="text-center">
         </br>
-        <a class="btn btn-lg btn-success text-white" href="https://t.me/+mbo-lMokhOc1ZWIx"><b>Ingresá al Telegram</b></a>
+        <a class="btn btn-lg btn-info text-white" href="https://t.me/+mbo-lMokhOc1ZWIx"><b>Ingresá al Telegram</b></a>
         {% block page_js %}
         {% endblock page_js %}
     </div>

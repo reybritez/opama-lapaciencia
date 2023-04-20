@@ -1,8 +1,30 @@
 /* Set Header Font */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Franklin Gothic Medium', sans-serif;
+h1{
+    font-family: 'Changa One', sans-serif;
+    padding-top: 2%;
 }
 
+h2, h3, h4, h5, h6, p, a{
+    font-family: 'Inter', sans-serif;
+    width: auto;
+}
 .center {
     text-align:center;
+}
+
+.text-opama {
+    color: #0A093A
+}
+.text-opama2 {
+    color: #781BFC
+}
+.fondoazul {
+    background-color: #2648F1;
+}
+.fondoclaro {
+    background-color: #89A1FB;
+}
+
+img {
+    width: 100%;
 }

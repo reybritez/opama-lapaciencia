@@ -11,14 +11,16 @@ class SiteMap(sitemaps.Sitemap):
             # Website
             'website:landing_page',
             # API
-            'api:test_json',
-            'api:test_excel',
+            'api:tu_bus_de_la_suerte',
+            'api:biggest_spender',
             # Applications
-            'website:react_app',
-            'website:react_component',
+            'website:tu_bus_de_la_suerte',
+            'website:biggest_spender',
             # Content
-            'content:django',
-            'content:react',
+            'content:opama_mateo_torres',
+            'content:opama_lucho_benitez',
+            'content:opama_karl_niebuhr',
+            'content:docs'
         ]
     def location(self, item):
         return reverse(item)
